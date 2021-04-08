@@ -28,7 +28,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/app/resource/scss/styles.scss"
+              "src/content/scss/styles.scss"
             ],
             "scripts": []
           },
