@@ -1,0 +1,70 @@
+.m-none {
+  margin: 0;
+}
+
+.p-none {
+  padding: 0;
+}
+
+@each $name, $spaceing in $unit {
+  .m-#{$name} {
+    margin: $spaceing;
+  }
+}
+
+@each $name, $spaceing in $unit {
+  .mt-#{$name} {
+    margin-top: $spaceing;
+  }
+}
+
+@each $name, $spaceing in $unit {
+  .mb-#{$name} {
+    margin-bottom: $spaceing;
+  }
+}
+
+@each $name, $spaceing in $unit {
+  .ml-#{$name} {
+    margin-left: $spaceing;
+  }
+}
+
+@each $name, $spaceing in $unit {
+  .mr-#{$name} {
+    margin-right: $spaceing;
+  }
+}
+
+@each $name, $spaceing in $unit {
+  .p-#{$name} {
+   padding: $spaceing;
+  }
+}
+
+@each $name, $spaceing in $unit {
+  .pt-#{$name} {
+   padding-top: $spaceing;
+  }
+}
+
+@each $name, $spaceing in $unit {
+  .pb-#{$name} {
+   padding-bottom: $spaceing;
+  }
+}
+
+@each $name, $spaceing in $unit {
+  .pl-#{$name} {
+   padding-left: $spaceing;
+  }
+}
+
+@each $name, $spaceing in $unit {
+  .pr-#{$name} {
+   padding-right: $spaceing;
+  }
+}
+
+
+
