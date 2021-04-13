@@ -29,7 +29,8 @@
             ],
             "styles": [
               "src/content/scss/styles.scss",
-              "src/content/scss/vendor.scss"
+              "src/content/scss/vendor.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           },
@@ -94,7 +95,8 @@
             ],
             "styles": [
               "src/app/resource/scss/styles.scss",
-              "src/app/resource/scss/vendor.scss"
+              "src/app/resource/scss/vendor.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           }

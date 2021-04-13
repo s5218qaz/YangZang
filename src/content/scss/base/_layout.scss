@@ -22,6 +22,10 @@
   visibility: hidden;
 }
 
+.o-fidden {
+  overflow: hidden;;
+}
+
 .fl-w {
   flex-wrap: wrap;
 }
@@ -76,6 +80,10 @@
 
 .ta-l {
   text-align: left;
+}
+
+.position-relative {
+  position: relative;
 }
 
 $start-width: 5%;

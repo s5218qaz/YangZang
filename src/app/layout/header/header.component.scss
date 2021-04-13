@@ -1,0 +1,44 @@
+@import '../../../content/scss/base/_color';
+
+.logo {
+    color: $main_color;
+    width: 100px;
+
+    .logo-title {
+        width: min-content;
+        margin: auto;
+        font-size: 20px;
+    }
+    .logo-img {
+      width: 100px;
+    }
+}
+
+.header-img-block {
+    width: 100%;
+    background-color: beige;
+    background-image: url('https://karimoku-cat.jp/wp/wp-content/themes/karimokucat/assets/img/img_mainvisual.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    .main-title {
+        text-align: center;
+        font-size: 150px;
+        font-weight: bold;
+        color: $main_dark_color;
+    }
+}
+
+.nav-item {
+    margin: auto;
+    padding: 20px 0px;
+    width: min-content;
+    line-height: 19px;
+    .nav-link {
+        font-weight: bold;
+        color: $main_color;
+    }
+}
+
+
