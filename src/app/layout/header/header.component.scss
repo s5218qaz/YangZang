@@ -27,18 +27,28 @@
         font-size: 150px;
         font-weight: bold;
         color: $main_dark_color;
+        border-top: solid 5px;
+        border-bottom: solid 5px;
     }
+
 }
 
 .nav-item {
+    box-sizing: border-box;
     margin: auto;
-    padding: 20px 0px;
+    padding: 20px 10px;
     width: min-content;
     line-height: 19px;
-    .nav-link {
+    .nav-item-link {
         font-weight: bold;
         color: $main_color;
     }
+
+    .nav-item-link:hover {
+        text-decoration: none;
+        color: $main_dark_color;
+    }
+    
 }
 
 

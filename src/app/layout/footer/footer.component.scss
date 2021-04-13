@@ -1,0 +1,27 @@
+@import '../../../content/scss/base/_color';
+
+.footer {
+   background-color: $main_dark_color;
+   padding:20px 100px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.footer-ul{
+    font-size: 15px;
+    padding-right: 50px;
+    color: #fff;
+    line-height: 30px;
+    margin-right: 50px;
+    margin-bottom: 0px;
+    border-right: solid 1px;
+}
+
+.footer-title {
+    color: $main_color;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    font-style: oblique
+}

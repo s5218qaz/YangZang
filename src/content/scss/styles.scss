@@ -1,3 +1,6 @@
+@import 'base/_variable';
+@import 'base/_color';
+
 /* You can add global styles to this file, and also import other style files */
 .main-container {
     box-sizing: border-box;
@@ -9,13 +12,41 @@
 }
 
 .mt-100{
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
-.width-100 {
+.w-100px {
     width: 100px;
 }
 
-.height-100vh {
+.h-100vh {
     height: 100vh;
+}
+
+.section-title {
+    position: relative;
+    margin-top: 50px;
+    color: $main_color;
+    font-size: $webTitleMax;
+    padding-left: 10px;
+}
+
+.section-title:before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 5px;
+    background-color: $main_dark_color;
+    position: absolute;
+    left: 10px;
+    top: 40px;
+}
+
+.default-link-style {
+    font-weight: bold;
+    color: $main_color;
+}
+.default-link-style:hover {
+    text-decoration: none;
+    color: $main_dark_color;
 }

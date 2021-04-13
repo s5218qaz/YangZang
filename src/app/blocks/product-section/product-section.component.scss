@@ -1,0 +1,13 @@
+@import '../../../content/scss/base/_color';
+
+.read-more:after{
+    position: absolute;
+    display: block;
+    content: "";
+    top: 25px;
+    right: -3px;
+    bottom: 0;
+    width: 8rem;
+    height: 2px;
+    background-color: $main_color;
+}
