@@ -1,5 +1,6 @@
 @import 'base/_variable';
 @import 'base/_color';
+@import 'base/_mixin';
 
 /* You can add global styles to this file, and also import other style files */
 .main-container {
@@ -11,16 +12,21 @@
     margin-left: auto;
 }
 
-.mt-100{
-    margin-top: 100px;
-}
-
 .w-100px {
     width: 100px;
 }
 
 .h-100vh {
     height: 100vh;
+}
+
+.default-link-style {
+    font-weight: bold;
+    color: $main_color;
+}
+.default-link-style:hover {
+    text-decoration: none;
+    color: $main_dark_color;
 }
 
 .section-title {
@@ -42,11 +48,6 @@
     top: 40px;
 }
 
-.default-link-style {
-    font-weight: bold;
-    color: $main_color;
-}
-.default-link-style:hover {
-    text-decoration: none;
-    color: $main_dark_color;
+.read-more:after{
+    @include decoration-line(35px, -3px, 130px, 2px);
 }

@@ -1,0 +1,10 @@
+@mixin decoration-line($top, $right, $w, $h){
+    position: absolute;
+    display: block;
+    content: "";
+    top: $top;
+    right: $right;
+    width: $w;
+    height: $h;
+    background-color: $main_color;
+}
