@@ -26,7 +26,7 @@
 }
 .default-link-style:hover {
     text-decoration: none;
-    color: $main_dark_color;
+    color: $main_warm_dark_color;
 }
 
 .section-title {
@@ -42,7 +42,7 @@
     display: block;
     width: 50px;
     height: 5px;
-    background-color: $main_dark_color;
+    background-color: $main_warm_dark_color;
     position: absolute;
     left: 10px;
     top: 40px;
