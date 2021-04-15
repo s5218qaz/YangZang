@@ -2,71 +2,67 @@
   margin: 0;
 }
 
-.m-auto{
-  margin: auto;
-}
-
 .p-none {
   padding: 0;
 }
 
-@each $name, $spaceing in $unit {
+@each $name, $spacing in $unit {
   .m-#{$name} {
-    margin: $spaceing;
+    margin: $spacing;
   }
 }
 
-@each $name, $spaceing in $unit {
+@each $name, $spacing in $unit {
   .mt-#{$name} {
-    margin-top: $spaceing;
+    margin-top: $spacing;
   }
 }
 
-@each $name, $spaceing in $unit {
+@each $name, $spacing in $unit {
   .mb-#{$name} {
-    margin-bottom: $spaceing;
+    margin-bottom: $spacing;
   }
 }
 
-@each $name, $spaceing in $unit {
+@each $name, $spacing in $unit {
   .ml-#{$name} {
-    margin-left: $spaceing;
+    margin-left: $spacing;
   }
 }
 
-@each $name, $spaceing in $unit {
+@each $name, $spacing in $unit {
   .mr-#{$name} {
-    margin-right: $spaceing;
+    margin-right: $spacing;
   }
 }
 
-@each $name, $spaceing in $unit {
+@each $name, $spacing in $unit {
   .p-#{$name} {
-   padding: $spaceing;
+   padding: $spacing;
   }
 }
 
-@each $name, $spaceing in $unit {
+@each $name, $spacing in $unit {
   .pt-#{$name} {
-   padding-top: $spaceing;
+   padding-top: $spacing;
   }
 }
 
-@each $name, $spaceing in $unit {
+@each $name, $spacing in $unit {
   .pb-#{$name} {
-   padding-bottom: $spaceing;
+   padding-bottom: $spacing;
   }
 }
 
-@each $name, $spaceing in $unit {
+@each $name, $spacing in $unit {
   .pl-#{$name} {
-   padding-left: $spaceing;
+   padding-left: $spacing;
   }
 }
 
-@each $name, $spaceing in $unit {
+@each $name, $spacing in $unit {
   .pr-#{$name} {
-   padding-right: $spaceing;
+   padding-right: $spacing;
   }
 }
 

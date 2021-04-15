@@ -13,6 +13,8 @@ import { NavBarComponent } from './layout/nav-bar/nav-bar.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ProductComponent } from './pages/product/product.component';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { IntroduceSectionComponent } from './blocks/introduce-section/introduce-section.component';
+import { GoToTopBtnComponent } from './components/go-to-top-btn/go-to-top-btn.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { ProfileComponent } from './pages/profile/profile.component';
     ContactComponent,
     ProductComponent,
     ProfileComponent,
+    IntroduceSectionComponent,
+    GoToTopBtnComponent,
   ],
   imports: [
     BrowserModule,
