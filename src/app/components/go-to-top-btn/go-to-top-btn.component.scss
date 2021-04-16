@@ -1,0 +1,15 @@
+@import '../../../content/scss/base/_color';
+@import '../../../content/scss/base/_mixin';
+
+
+.go-to-top-btn {
+    background-color: $main_warm_color;
+    z-index: 5;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    right: 15px;
+    bottom: 30px;
+    border: solid 1px $main_warm_color;
+    border-radius: 10px
+}

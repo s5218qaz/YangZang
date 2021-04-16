@@ -1,4 +1,5 @@
 @import '../../../content/scss/base/_color';
+@import '../../../content/scss/base/_mixin';
 
 .footer {
    background-color: #eee;
@@ -25,3 +26,6 @@
     font-weight: bolder;
     font-style: oblique
 }
+
+
+

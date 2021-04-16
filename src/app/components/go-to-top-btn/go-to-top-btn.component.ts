@@ -12,4 +12,9 @@ export class GoToTopBtnComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  scrollTo(){
+    const a = document.getElementById("headerLogo");
+    a.scrollIntoView({behavior: 'smooth'});
+  }
+
 }

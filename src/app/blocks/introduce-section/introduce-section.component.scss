@@ -22,12 +22,12 @@
     background-color: $main_light_m_color ;
     top: 83px;
     right: 20%;
-    animation-name: deco;
+    animation-name: deco-about;
     animation-iteration-count: infinite;
     animation-duration: 3s;
 }
 
-@keyframes deco {
+@keyframes deco-about {
     0% {width: 250px;}
     50% {width: 150px;}
     100% {width: 250px;}
@@ -41,7 +41,7 @@
     letter-spacing: 3px;
     line-height: 28px;
     padding-left: 20px;
-    border-left: 3px solid;
+    border-left: 5px solid $main_color;
 }
 
 .wording {
@@ -58,4 +58,9 @@
     right: 0;
     top: auto;
     bottom: -50px;
+}
+
+.about-content{
+    line-height: 30px;
+    font-weight: bolder;
 }

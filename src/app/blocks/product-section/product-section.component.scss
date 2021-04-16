@@ -1,2 +1,28 @@
 @import '../../../content/scss/base/_color';
+@import '../../../content/scss/base/_extend';
 
+
+.product-deco::before {
+    @extend %pseudo-setting;
+    width: 80px;
+    height: 80px;
+    background-color: $main_warm_light_color ;
+    top: 50%;
+    right: -12px;
+}
+
+.product-deco::after {
+    @extend %pseudo-setting;
+    width: 50px;
+    background-color: $main_warm_light_color ;
+    top: 75px;
+    left: -100px;
+    animation-name: deco;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+@keyframes deco {
+    0% {height: 250px;}
+    50% {height: 150px;}
+    100% {height: 250px;}
+}

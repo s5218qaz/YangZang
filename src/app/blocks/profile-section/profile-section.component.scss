@@ -1,0 +1,11 @@
+@import '../../../content/scss/base/_extend';
+@import '../../../content/scss/base/color';
+
+.profile-block::after {
+    @extend %pseudo-setting;
+    width: 80px;
+    background-color: $main_warm_light_color ;
+    bottom: 0;
+    left: -35px;
+    height: 200px;
+}
