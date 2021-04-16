@@ -1,8 +1,16 @@
 @import 'base/_variable';
 @import 'base/_color';
 @import 'base/_mixin';
+@import 'base/_extend';
 
 /* You can add global styles to this file, and also import other style files */
+body {
+    height: inherit;
+    background: -webkit-linear-gradient(left,  $main_warm_light_color 1px, #fff 1px);
+    background-size: 300px;
+//     原文链接：https://blog.csdn.net/AsheAndWine/article/details/79044407
+}
+
 .main-container {
     box-sizing: border-box;
     width: 100%;
@@ -11,6 +19,22 @@
     margin-right: auto;
     margin-left: auto;
 }
+
+::selection {
+background: $main_color;
+color: #fff;
+}
+::-moz-selection {
+background: $main_color;
+color: #fff;
+}
+img::selection {
+background: transparent;
+}
+img::-moz-selection {
+background: transparent;
+}
+
 
 .w-100px {
     width: 100px;
@@ -42,12 +66,10 @@
 }
 
 .section-title:before {
-    content: "";
-    display: block;
+    @extend %pseudo-setting;
     width: 50px;
     height: 5px;
     background-color: $main_warm_dark_color;
-    position: absolute;
     left: 10px;
     top: 40px;
 }

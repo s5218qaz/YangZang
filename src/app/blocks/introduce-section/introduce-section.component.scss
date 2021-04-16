@@ -1,13 +1,47 @@
 @import '../../../content/scss/base/_color';
-.about-title {
-    font-size: 30px;
-    margin: 20px;
-    color: $main_warm_color;
-}
+@import '../../../content/scss/base/_extend';
 
 .about-block{
     padding-top: 200px;
     padding-bottom: 200px;
+}
+
+.about-block::before {
+    @extend %pseudo-setting;
+    height: 80px;
+    width: 310px;
+    background-color: $main_light_color ;
+    top: 375px;
+    left: 25%;
+}
+
+
+.about-block::after {
+    @extend %pseudo-setting;
+    height: 50px;
+    background-color: $main_light_m_color ;
+    top: 83px;
+    right: 20%;
+    animation-name: deco;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+@keyframes deco {
+    0% {width: 250px;}
+    50% {width: 150px;}
+    100% {width: 250px;}
+}
+
+
+.about-title {
+    font-size: 30px;
+    margin-bottom: 50px!important;
+    color: $main_warm_color;
+    letter-spacing: 3px;
+    line-height: 28px;
+    padding-left: 20px;
+    border-left: 3px solid;
 }
 
 .wording {
@@ -15,6 +49,7 @@
     font-weight: bold;
     color:transparent;
     -webkit-text-stroke: 2px $main_warm_light_color;
+    border-bottom: solid 3px $main_warm_light_color;
     top: -50px;
 }
 

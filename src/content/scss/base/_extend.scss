@@ -1,3 +1,6 @@
-button {
-    background-color: red;
+%pseudo-setting{
+    display: block;
+    content: "";
+    position: absolute;
+    z-index: -1;
 }
