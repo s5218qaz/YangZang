@@ -11,5 +11,10 @@
     right: 15px;
     bottom: 30px;
     border: solid 1px $main_warm_color;
-    border-radius: 10px
+    border-radius: 10px;
+    transition: 1.5s;
+}
+
+.set-opacity{
+    opacity: 0;
 }

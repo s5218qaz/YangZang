@@ -8,27 +8,25 @@ import { from } from 'rxjs';
 })
 export class GoToTopBtnComponent implements OnInit{
 
-  windowHeight = 0;
-  isBtnHide: boolean = true;
-
+  isBtnHidden = true;
   constructor() {}
 
   ngOnInit(): void {
-    window.addEventListener('scroll', this.scroll, true); 
+    this.scroll();
   }
 
   ngOnDestroy(): void {
-    window.removeEventListener('scroll', this.scroll, true);
+    this.scroll();
   }
 
   scrollTop(): void{
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+  scroll(): void{
+    window.addEventListener('scroll', () => {
+      this.isBtnHidden = window.pageYOffset > 150 ? false : true;
+    });
+  }
 
-  scroll(){
-    this.windowHeight = window.scrollY;
-    this.isBtnHide = this.windowHeight > 30 ? false: true; 
-    console.log(this.isBtnHide);
-  };
 
 }

@@ -1,2 +1,2 @@
-<button [hidden]="isBtnHide" class="go-to-top-btn text-center position-fixed" (click)="scrollTop()">TOP
+<button [ngClass]="{'set-opacity': isBtnHidden}" class="go-to-top-btn text-center position-fixed" (click)="scrollTop()">TOP
 </button>
