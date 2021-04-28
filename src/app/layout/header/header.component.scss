@@ -1,6 +1,7 @@
 @import '../../../content/scss/base/_color';
 @import '../../../content/scss/base/_mixin';
 @import '../../../content/scss/base/_extend';
+@import '../../../content/scss/base/_variable';
 
 .logo {
     color: $main_color;
@@ -52,6 +53,9 @@
 
 }
 
+
+
+
 .header-img-block {
     width: 100%;
     background-color: beige;
@@ -66,8 +70,14 @@
         color: $main_warm_color;
         border-top: solid 5px;
         border-bottom: solid 5px;
+
+        @media (max-width: $pad) {
+            font-size: 7rem;
+        }
+
+        @media (max-width: $phone) {
+            font-size: 5rem;
+        }
     }
 
 }
-
-

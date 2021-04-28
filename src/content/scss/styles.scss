@@ -79,3 +79,10 @@ background: transparent;
 .read-more:after{
     @include decoration-line(35px, -3px, 130px, 2px);
 }
+
+@media (max-width: 992px) {
+    .table-d-none {
+        display: none!important;
+    }
+    
+}

@@ -1,11 +1,18 @@
 @import '../../../content/scss/base/_color';
 @import '../../../content/scss/base/_mixin';
+@import '../../../content/scss/base/_variable';
 
 .footer {
    background-color: #eee;
    padding:20px 100px;
-    height: 200px;
+   height: 200px;
     margin-top: 150px;
+
+    @media (max-width: 992px) {
+        text-align: center;
+        padding:20px 50px;
+    }
+
 }
 
 .footer-ul{
@@ -16,6 +23,14 @@
     margin-right: 50px;
     margin-bottom: 0px;
     border-right: solid 1px;
+
+    @media (max-width: 992px) {
+        border-right: none;
+        text-align: center;
+        line-height: 35px;
+        padding-right: 0px;
+        margin-right: 0px;
+    }
 }
 
 .footer-title {

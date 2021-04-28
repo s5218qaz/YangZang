@@ -1,9 +1,15 @@
 @import '../../../content/scss/base/_color';
 @import '../../../content/scss/base/_extend';
+@import '../../../content/scss/base/_variable';
 
 .about-block{
     padding-top: 200px;
     padding-bottom: 200px;
+
+    @media (max-width: $phone) {
+       padding-bottom: 50px;
+        padding-top: 50px;
+    }
 }
 
 .about-block::before {
@@ -13,6 +19,10 @@
     background-color: $main_light_color ;
     top: 375px;
     left: 25%;
+
+    @media (max-width: $phone) {
+        display: none;
+    }
 }
 
 
@@ -35,6 +45,7 @@
 
 
 .about-title {
+    width: 50%;
     font-size: 30px;
     margin-bottom: 50px!important;
     color: $main_warm_color;
@@ -42,6 +53,17 @@
     line-height: 28px;
     padding-left: 20px;
     border-left: 5px solid $main_color;
+
+    @media (max-width: $pad) {
+        font-size: 25px;
+        width: 70%;
+    }
+
+    @media (max-width: $phone) {
+        width: 100%;
+        font-size: 20px;
+    }
+
 }
 
 .wording {
@@ -63,4 +85,13 @@
 .about-content{
     line-height: 30px;
     font-weight: bolder;
+    width: 50%;
+
+    @media (max-width: $pad) {
+        width: 70%;
+    }
+
+    @media (max-width: $phone) {
+        width: 100%;
+    }
 }
