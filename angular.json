@@ -30,7 +30,8 @@
             "styles": [
               "src/content/scss/styles.scss",
               "src/content/scss/vendor.scss",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/jquery/dist/jquery.min.js"
             ],
             "scripts": []
           },

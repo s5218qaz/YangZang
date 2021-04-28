@@ -26,6 +26,7 @@ export class GoToTopBtnComponent implements OnInit{
     window.addEventListener('scroll', () => {
       this.isBtnHidden = window.pageYOffset > 150 ? false : true;
     });
+
   }
 
 

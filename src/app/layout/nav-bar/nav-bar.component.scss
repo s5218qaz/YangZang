@@ -1,5 +1,23 @@
+@import '../../../content/scss/base/_color';
+
 .navbar {
     position: sticky;
     top: 0;
     z-index: 1071
+}
+
+.navbar>.navbar-brand{
+    color: $main_color;
+}
+
+.link-wording{
+    color: $main_color!important;
+}
+
+.link-wording:hover{
+    color: $main_warm_dark_color!important;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: #f8f9fa;
 }
