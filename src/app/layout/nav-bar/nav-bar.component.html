@@ -3,8 +3,18 @@
       YANG ZANG
         <!-- <img src="./assets/images/logo.png" width="30" height="30" alt=""> -->
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button 
+      (click)="clickHam()" 
+      [ngClass]="{'activity': isHamActive}"
+      class="navbar-toggler" type="button" 
+      data-toggle="collapse" 
+      data-target="#navbarNavAltMarkup" 
+      aria-controls="navbarNavAltMarkup" 
+      aria-expanded="false" aria-label="Toggle navigation">
+      <!-- <span class="navbar-toggler-icon"></span> -->
+      <span class="hamburger-line ham-1"></span>
+      <span class="hamburger-line ham-2"></span>
+      <span class="hamburger-line ham-3"></span>
     </button>
     <div class="collapse navbar-collapse  justify-content-end" id="navbarNavAltMarkup">
       <div class="navbar-nav">

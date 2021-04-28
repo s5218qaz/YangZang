@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
+  isHamActive= false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  clickHam(): void{
+    if (!this.isHamActive) {
+      this.isHamActive = true;
+    } else {
+      this.isHamActive = false;
+    }
   }
 
 }

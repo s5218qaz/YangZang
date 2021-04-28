@@ -1,4 +1,5 @@
 @import '../../../content/scss/base/_color';
+@import '../../../content/scss/base/_extend';
 
 .navbar {
     position: sticky;
@@ -20,4 +21,26 @@
 
 .navbar-light .navbar-toggler {
     border-color: #f8f9fa;
+}
+
+.activity {
+    .ham-3 {
+        transform: translate(0, 0px) rotate(45deg);
+    }
+
+    .ham-1{
+        transform: translate(0, 9px) rotate(-45deg);
+    }
+
+    .ham-2 {
+        display: none;
+    }
+}
+.hamburger-line {
+    display: block;
+    background-color: $main_color;
+    width: 27px;
+    height: 2px;
+    margin: 7px;
+    transition: all .2s 0s;
 }
