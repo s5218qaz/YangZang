@@ -1,0 +1,63 @@
+@import '../../../content/scss/base/color';
+@import '../../../content/scss/base/_variable';
+@import '../../../content/scss/base/_mixin';
+
+.contact-title {
+    padding: 250px 50px 200px 50px;
+    font-size: 27px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: $main_warm_dark_color;
+
+    @media (max-width: 990px) {
+        font-size: 23px;
+        padding: 150px 50px 100px 50px;
+    }
+
+    @media (max-width: $phone) {
+        font-size: 20px;
+    }
+}
+
+.info-content {
+    margin-bottom: 200px;
+
+    @media (max-width: $pad) {
+        margin-bottom: 100px;
+    }
+}
+
+h5 {
+    font-size: 23px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: $main_warm_color;
+
+    @media (max-width: $pad) {
+        font-size: 18px;
+    }
+}
+
+a, p {
+    color: $main_color!important;
+    letter-spacing: 2px;
+}
+
+
+.deco-title::before {
+    width: 800px;
+    opacity: 0.5;
+    display: block;
+    content: 'contact us';
+    position: absolute;
+    font-size: 150px;
+    left: 38%;
+    top: -50%;
+    color: transparent;
+    z-index: -1;
+    -webkit-text-stroke: 2px $main_warm_light_color;
+
+    @media (max-width: 990px) {
+        display: none;
+    }
+}

@@ -80,6 +80,16 @@ background: transparent;
     @include decoration-line(35px, -3px, 130px, 2px);
 }
 
+.page-banner {
+    width: 100%;
+    padding: 70px;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    background-color: $main_light_m_color;
+    color: #fff;
+}
+
 @media (max-width: 992px) {
     .table-d-none {
         display: none!important;
