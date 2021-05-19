@@ -1,28 +1,12 @@
 @import '../../../content/scss/base/_color';
 
-.nav-menu {
-    z-index:5;
-    position: fixed;
-    right: 25px;
-    top: 25%;
-    display: inline-block
-}
-
-
-.nav-item {
-    box-sizing: border-box;
-    margin: auto;
-    padding: 20px 10px;
+h3 {
+    position: absolute;
+    right: 35px;
+    top: 27%;
+    font-size: 17px;
     width: min-content;
-    line-height: 19px;
-    .nav-item-link {
-        font-weight: bold;
-        color: $main_color;
-    }
-
-    .nav-item-link:hover {
-        text-decoration: none;
-        color: $main_warm_dark_color;
-    }
-    
+    line-height: 27px;
+    font-weight: bold;
+    color: $main_color;
 }

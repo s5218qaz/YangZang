@@ -10,17 +10,11 @@ import * as $ from 'jquery';
 export class AppComponent implements OnInit{
   
   title = 'YangZang';
-  currentRoute: string;
 
   constructor(private router: Router) {}
 
   ngOnInit(): void {
-    this.isShow();
-  }
 
-  isShow() {
-    console.log(this.router);
-    console.log( window.location.href);
   }
 
 }
