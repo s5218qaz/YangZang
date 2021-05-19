@@ -81,3 +81,36 @@
     }
 
 }
+
+h3 {
+    position: relative;
+    font-size: 17px;
+    width: min-content;
+    line-height: 27px;
+    color: $main_color;
+    margin: auto;
+    top: 16%;
+    padding: 10px 0px;
+}
+
+h3::before{
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    width: 15px;
+    height: 15px;
+    border-top: solid 2px $main_warm_color;
+    border-right: solid 2px $main_warm_color;
+}
+
+h3::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: -15px;
+    width: 15px;
+    height: 15px;
+    border-bottom: solid 2px $main_warm_color;
+    border-left: solid 2px $main_warm_color;
+}
