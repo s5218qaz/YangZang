@@ -42,22 +42,3 @@ a, p {
     color: $main_color!important;
     letter-spacing: 2px;
 }
-
-
-.deco-title::before {
-    width: 800px;
-    opacity: 0.5;
-    display: block;
-    content: 'contact us';
-    position: absolute;
-    font-size: 150px;
-    left: 38%;
-    top: -50%;
-    color: transparent;
-    z-index: -1;
-    -webkit-text-stroke: 2px $main_warm_light_color;
-
-    @media (max-width: 990px) {
-        display: none;
-    }
-}

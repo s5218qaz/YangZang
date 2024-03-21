@@ -1,7 +1,193 @@
-$start-width: 5%;
-@for $i from 1 to 21 {
-    .w-#{$i*5}{
-         width: $start-width * $i;
-    }
-}   
-       
+@import './variable';
+
+.d-fl {
+  display: flex;
+}
+
+.d-line {
+  display: inline;
+}
+
+.d-inb {
+  display: inline-block;
+}
+
+.d-inb--mb {
+  @media (max-width: $phone) {
+    display: inline-block !important;
+  }
+}
+
+.d-infl {
+  display: inline-flex;
+}
+
+.d-b {
+  display: block;
+}
+
+.d-contents {
+  display: contents;
+}
+
+.d-b--mb {
+  @media (max-width: $phone) {
+    display: block !important;
+  }
+}
+
+.d-fl--mb {
+  @media (max-width: $phone) {
+    display: flex !important;
+  }
+}
+
+.d-none {
+  display: none;
+}
+
+.d-none--mb {
+  @media (max-width: $phone) {
+    display: none !important;
+  }
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.v-hidden {
+  visibility: hidden;
+}
+
+.fl-w {
+  flex-wrap: wrap;
+}
+
+.fl-w--mb {
+  @media (max-width: $phone) {
+    flex-wrap: wrap;
+  }
+}
+
+.fl-ai-c {
+  align-items: center;
+}
+
+.fl-ai-c--mb {
+  @media (max-width: $phone) {
+    align-items: center;
+  }
+}
+
+.fl-ai-fe {
+  align-items: flex-end;
+}
+
+.fl-jc-fs {
+  justify-content: flex-start;
+}
+
+.fl-jc-c {
+  justify-content: center;
+}
+
+.fl-jc-e {
+  justify-content: end;
+}
+
+.fl-jc-fe {
+  justify-content: flex-end;
+}
+
+.fl-jc-sb {
+  justify-content: space-between;
+}
+
+.fl-jc-sb--mb {
+  @media (max-width: $phone) {
+    justify-content: space-between;
+  }
+}
+
+.fl-jc-sa {
+  justify-content: space-around;
+}
+
+.fl-11a {
+  flex: 1 1 auto;
+}
+
+.fl-00a {
+  flex: 0 0 auto;
+}
+
+.ta-c {
+  text-align: center;
+}
+
+.ta-c--mb {
+  @media (max-width: $phone) {
+    text-align: center;
+  }
+}
+
+.ta-r {
+  text-align: right;
+}
+
+.ta-r--mb {
+  @media (max-width: $phone) {
+    text-align: right;
+  }
+}
+
+.ta-l {
+  text-align: left;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.initial {
+  position: initial !important;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.align-center {
+  align-items: center;
+}
+
+
+.vertical-align-m {
+  vertical-align: middle;
+}
+
+.vertical-align-t {
+  vertical-align: top;
+}
+
+.vertical-align-b {
+  vertical-align: bottom;
+}
+
+.vertical-align-sub {
+  vertical-align: sub;
+}
+
