@@ -1,5 +1,11 @@
 @import '../../../content/scss/base/_mixin';
 
+.introduce-container {
+  margin: 200px 0px;
+  line-height: 45px;
+  position: relative;
+}
+
 .product-card {
   cursor: pointer;
   overflow: hidden;
