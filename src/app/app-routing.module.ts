@@ -9,6 +9,7 @@ import { ProductDetailComponent } from './pages/front-end/product/product-detail
 import { ProductContentComponent } from './pages/front-end/product/product-content/product-content.component';
 import { LoginComponent } from './pages/login/login.component';
 import { CmsComponent } from './pages/back-end/cms/cms.component';
+import { CheckHasLoginGuard } from './shared/guard/check-has-login.guard';
 
 
 const routes: Routes = [
@@ -41,11 +42,13 @@ const routes: Routes = [
   },
   {
     path: 'login',
-    component: LoginComponent
+    component: LoginComponent,
+    canActivate: [CheckHasLoginGuard]
   },
   {
     path: 'cms',
-    component: CmsComponent
+    component: CmsComponent,
+    canActivate: [CheckHasLoginGuard]
   }
   // {
   //   path: 'portfolio',
