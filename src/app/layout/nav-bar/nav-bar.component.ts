@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav-bar',
@@ -6,11 +7,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent implements OnInit {
+  isHamActive = false;
 
-  isHamActive= false;
-  constructor() { }
+  constructor(
+    private router: Router,
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  isLoginPage(): boolean {
+    return this.router.url.includes('login')
+      ? true
+      : false;
+  }
+
+  isCMS(): boolean {
+    return this.router.url.includes('cms')
+            ? true
+            : false;
   }
 
   clickHam(): void{

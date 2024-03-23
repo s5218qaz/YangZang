@@ -13,7 +13,7 @@ import { IntroduceSectionComponent } from './blocks/introduce-section/introduce-
 import { GoToTopBtnComponent } from './components/go-to-top-btn/go-to-top-btn.component';
 import { HomePageHeaderComponent } from './layout/home-page-header/home-page-header.component';
 import { ProductModule } from './pages/product/product.module';
-
+import { CmsModule } from './pages/cms/cms.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +31,8 @@ import { ProductModule } from './pages/product/product.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ProductModule
+    ProductModule,
+    CmsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

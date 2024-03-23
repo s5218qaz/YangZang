@@ -1,21 +1,14 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import * as $ from 'jquery';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit{
-  
+export class AppComponent{
   title = 'YangZang';
 
-  constructor(private router: Router) {}
-
-  ngOnInit(): void {
-
-  }
+  constructor() {}
 
 }
 

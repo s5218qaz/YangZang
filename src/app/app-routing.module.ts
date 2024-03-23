@@ -7,6 +7,8 @@ import { PortfolioComponent } from './pages/Portfolio/Portfolio.component';
 import { ProductComponent } from './pages/product/product.component';
 import { ProductDetailComponent } from './pages/product/product-detail/product-detail.component';
 import { ProductContentComponent } from './pages/product/product-content/product-content.component';
+import { LoginComponent } from './pages/login/login.component';
+import { CmsComponent } from './pages/cms/cms.component';
 
 
 const routes: Routes = [
@@ -38,9 +40,17 @@ const routes: Routes = [
       ]
   },
   {
-    path: 'portfolio',
-    component: PortfolioComponent
+    path: 'login',
+    component: LoginComponent
+  },
+  {
+    path: 'cms',
+    component: CmsComponent
   }
+  // {
+  //   path: 'portfolio',
+  //   component: PortfolioComponent
+  // }
 ];
 
 @NgModule({
