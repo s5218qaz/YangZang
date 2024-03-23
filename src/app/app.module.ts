@@ -5,15 +5,16 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { ProductSectionComponent } from './blocks/product-section/product-section.component';
 import { PortfolioSectionComponent } from './blocks/Portfolio-section/Portfolio-section.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HomeComponent } from './pages/home/home.component';
+import { HomeComponent } from './pages/front-end/home/home.component';
 import { NavBarComponent } from './layout/nav-bar/nav-bar.component';
-import { ContactComponent } from './pages/contact/contact.component';
-import { PortfolioComponent } from './pages/Portfolio/Portfolio.component';
+import { ContactComponent } from './pages/front-end/contact/contact.component';
+import { PortfolioComponent } from './pages/front-end//Portfolio/Portfolio.component';
 import { IntroduceSectionComponent } from './blocks/introduce-section/introduce-section.component';
 import { GoToTopBtnComponent } from './components/go-to-top-btn/go-to-top-btn.component';
 import { HomePageHeaderComponent } from './layout/home-page-header/home-page-header.component';
-import { ProductModule } from './pages/product/product.module';
-import { CmsModule } from './pages/cms/cms.module';
+import { ProductModule } from './pages/front-end/product/product.module';
+import { CmsModule } from './pages/back-end/cms/cms.module';
+import { LoginComponent } from './pages/login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +28,7 @@ import { CmsModule } from './pages/cms/cms.module';
     IntroduceSectionComponent,
     GoToTopBtnComponent,
     HomePageHeaderComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

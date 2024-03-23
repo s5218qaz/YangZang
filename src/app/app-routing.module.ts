@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
-import { ContactComponent } from './pages/contact/contact.component';
-import { PortfolioComponent } from './pages/Portfolio/Portfolio.component';
-import { ProductComponent } from './pages/product/product.component';
-import { ProductDetailComponent } from './pages/product/product-detail/product-detail.component';
-import { ProductContentComponent } from './pages/product/product-content/product-content.component';
+import { HomeComponent } from './pages/front-end/home/home.component';
+import { ContactComponent } from './pages/front-end/contact/contact.component';
+import { PortfolioComponent } from './pages/front-end/Portfolio/Portfolio.component';
+import { ProductComponent } from './pages/front-end/product/product.component';
+import { ProductDetailComponent } from './pages/front-end/product/product-detail/product-detail.component';
+import { ProductContentComponent } from './pages/front-end/product/product-content/product-content.component';
 import { LoginComponent } from './pages/login/login.component';
-import { CmsComponent } from './pages/cms/cms.component';
+import { CmsComponent } from './pages/back-end/cms/cms.component';
 
 
 const routes: Routes = [
