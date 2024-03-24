@@ -1,4 +1,5 @@
 @import '../../../content/scss/base/_mixin';
+@import '../../../content/scss/base/_color';
 
 .introduce-container {
   margin: 200px 0px;
@@ -67,4 +68,10 @@
 .cms-title {
   color: $main_dark_color;
   font-size: 30px;
+}
+
+.cms-btn {
+  color: #fff;
+  background-color: $main_dark_color;
+  margin-right: 10px;
 }

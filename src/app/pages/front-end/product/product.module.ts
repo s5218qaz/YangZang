@@ -5,12 +5,11 @@ import { ProductContentComponent } from './product-content/product-content.compo
 import { ProductComponent } from '../product/product.component';
 import { RouterModule } from '@angular/router';
 
-
 @NgModule({
   declarations: [
     ProductComponent,
     ProductDetailComponent,
-    ProductContentComponent
+    ProductContentComponent,
   ],
   imports: [
     CommonModule,

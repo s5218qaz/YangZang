@@ -38,6 +38,11 @@ export class ProductService {
   get products(): ProductVm[]{
     return this.productList;
   }
+
+  // @ts-ignore
+  set newProducts(products: ProductVm[]): void {
+    this.productList = products;
+  }
 }
 
 export interface ProductVm {

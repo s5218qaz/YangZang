@@ -19,8 +19,6 @@ export class LoginComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-     // eslint-disable-next-line no-console
-    console.log(this.loginService.loginStatusDto);
     this.form = this.formBuilder.group({
       username: ['', Validators.required],
       password: ['', Validators.required]

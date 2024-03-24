@@ -4,6 +4,8 @@ import { CmsComponent } from '../cms/cms.component';
 import { RouterModule } from '@angular/router';
 import { BannerComponent } from '../banner/banner.component';
 import { ProductListComponent } from '../product-list/product-list.component';
+import { ProductDetailDialogComponent } from '../product-list/product-detail-dialog/product-detail-dialog.component';
+import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -11,10 +13,12 @@ import { ProductListComponent } from '../product-list/product-list.component';
     CmsComponent,
     BannerComponent,
     ProductListComponent,
+    ProductDetailDialogComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
+    FormsModule,
   ]
 })
 export class CmsModule { }
