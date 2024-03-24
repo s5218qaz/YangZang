@@ -15,8 +15,8 @@ export class CheckHasLoginGuard implements CanActivate {
   canActivate(next: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean> | boolean {
     const loginStatusData = this.loginService.loginStatusDto;
 
-    if (loginStatusData && state.url.includes('/login')) {
-      this.router.navigate(['cms']);
+    if (!loginStatusData && state.url.includes('/cms')) {
+      this.router.navigate(['login']);
       return false;
     }
 

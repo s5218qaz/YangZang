@@ -24,6 +24,8 @@ export class ProductDetailDialogComponent implements OnInit {
       description: this.productDescription,
       imgUrls: this.dialogStatus === 'edit' ? this.productImgs : ['img1', 'img2', 'img3']
     };
+    this.productTitle = '';
+    this.productDescription = '';
     this.emitProductData.emit(productData);
   }
 

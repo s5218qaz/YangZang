@@ -55,12 +55,12 @@ const routes: Routes = [
       {
         path: '',
         pathMatch: 'full',
-        redirectTo: 'banner'
+        redirectTo: 'product-list'
       },
-      {
-        path: 'banner',
-        component: BannerComponent,
-      },
+      // {
+      //   path: 'banner',
+      //   component: BannerComponent,
+      // },
       {
         path: 'product-list',
         component: ProductListComponent,
