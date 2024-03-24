@@ -7,47 +7,16 @@
 </div>
 
 <div class="d-fl fl-w pr-l p-l">
-  <div class="col-sm-4">
+  <div
+    *ngFor="let product of productList; let i = index"
+    class="col-sm-4">
     <div
       class="card product-card"
-      (click)="openProdetailPage()">
-      <img src="./assets/images/demo_banner.jpg" class="card-img-top" alt="">
+      (click)="openProdetailPage(i)">
+      <img src="./assets/images/{{product.imgUrls[0]}}.jpg" class="card-img-top" alt="">
       <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-4">
-    <div class="card product-card" >
-      <img src="./assets/images/demo_banner.jpg" class="card-img-top" alt="">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-4">
-    <div class="card product-card" >
-      <img src="./assets/images/demo_banner.jpg" class="card-img-top" alt="">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-sm-4">
-    <div class="card product-card">
-      <img src="./assets/images/demo_banner.jpg" class="card-img-top" alt="">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-sm-4">
-    <div class="card product-card">
-      <img src="./assets/images/demo_banner.jpg" class="card-img-top" alt="">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p>{{product.title}}</p>
+        <p class="card-text">{{product.description}}</p>
       </div>
     </div>
   </div>
