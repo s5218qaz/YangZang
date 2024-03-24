@@ -1,1 +1,46 @@
-<p>product-list works!</p>
+<div class="d-fl fl-jc-sb mb-s">
+  <h6 class="cms-title">
+    商品列表
+  </h6>
+  <button
+    type="button"
+    class="btn product-btn">
+    新增
+  </button>
+</div>
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col">序號</th>
+    <th scope="col">名稱</th>
+    <th scope="col">照片名稱</th>
+    <th scope="col">操作</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr
+    *ngFor="let product of productList; let i = index">
+    <th scope="row">{{i+1}}</th>
+    <td>{{product.title}}</td>
+    <td>
+      <span *ngFor="let img of product.imgUrls; let last = last">
+         {{img}}
+        <span *ngIf="!last">、</span>
+      </span>
+    </td>
+    <td>
+      <button
+        type="button"
+        class="btn product-btn">
+        編輯
+      </button>
+      <button
+        type="button"
+        class="btn btn-danger">
+        刪除
+      </button>
+    </td>
+  </tr>
+  </tbody>
+</table>
