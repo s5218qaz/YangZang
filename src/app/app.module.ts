@@ -15,6 +15,9 @@ import { HomePageHeaderComponent } from './layout/home-page-header/home-page-hea
 import { ProductModule } from './pages/front-end/product/product.module';
 import { CmsModule } from './pages/back-end/cms/cms.module';
 import { LoginComponent } from './pages/login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { LoginService } from './shared/service/login.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,9 +37,10 @@ import { LoginComponent } from './pages/login/login.component';
     BrowserModule,
     AppRoutingModule,
     ProductModule,
-    CmsModule
+    CmsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,21 @@
+@import "../../../content/scss/base/variable";
+@import "../../../content/scss/base/color";
+
+.login-card {
+    width: 500px;
+    margin: 150px auto 200px auto;
+
+  &-header {
+    text-align: center;
+    padding: 10px;
+    background-color: $main_dark_color;
+    color: #fff;
+  }
+}
+
+.login-button {
+  width: 100%;
+  background-color: $main_dark_color;
+  color: #fff;
+  margin-top: 10px;
+}

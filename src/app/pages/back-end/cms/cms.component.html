@@ -1,1 +1,39 @@
-<p>cms works!</p>
+<div class="sidebar" [ngClass]="{ 'expanded': isExpanded }">
+  <div class="header">
+    <h1 class="title">
+      功能列表
+    </h1>
+    <div class="toggle" (click)="handleSidebarToggle()">
+      <span class="chevron"></span>
+    </div>
+  </div>
+  <div class="content">
+    <div class="link">
+      <div class="content">
+        <div
+            class="title"
+            [routerLink]="['/cms/banner']"
+            [routerLinkActive]="'active'">
+            Banner
+          </div>
+      </div>
+    </div>
+
+    <div class="link">
+      <div class="content">
+        <div
+          class="title"
+          [routerLink]="['/cms/product-list']"
+          [routerLinkActive]="'active'">
+          商品列表
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer"></div>
+</div>
+
+<div class="cms-content">
+  <router-outlet></router-outlet>
+</div>
+

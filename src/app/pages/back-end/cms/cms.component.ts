@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {LoginService} from '../../../shared/service/login.service';
 
 @Component({
   selector: 'app-cms',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cms.component.scss']
 })
 export class CmsComponent implements OnInit {
-
-  constructor() { }
+  isExpanded = true;
+  constructor(
+    private loginService: LoginService
+  ) { }
 
   ngOnInit(): void {
+    // eslint-disable-next-line no-console
+    console.log(this.loginService.loginStatusDto);
+  }
+
+  handleSidebarToggle(): void {
+    this.isExpanded = !this.isExpanded;
   }
 
 }

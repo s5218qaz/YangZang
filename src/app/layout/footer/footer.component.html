@@ -1,4 +1,6 @@
-<footer class="position-relative footer d-flex justify-content-center align-items-center">
+<footer
+    *ngIf="!hasUrlInclude('/cms')"
+    class="position-relative footer d-flex justify-content-center align-items-center">
     <ul class="footer-ul ">
         <li>
             洋攢設計有限公司
@@ -13,5 +15,5 @@
     <h4 class="footer-title pad-d-none">
         YangZang
     </h4>
-            
+
 </footer>

@@ -10,6 +10,8 @@ import { ProductContentComponent } from './pages/front-end/product/product-conte
 import { LoginComponent } from './pages/login/login.component';
 import { CmsComponent } from './pages/back-end/cms/cms.component';
 import { CheckHasLoginGuard } from './shared/guard/check-has-login.guard';
+import { BannerComponent } from './pages/back-end/banner/banner.component';
+import { ProductListComponent } from './pages/back-end/product-list/product-list.component';
 
 
 const routes: Routes = [
@@ -48,7 +50,22 @@ const routes: Routes = [
   {
     path: 'cms',
     component: CmsComponent,
-    canActivate: [CheckHasLoginGuard]
+    canActivate: [CheckHasLoginGuard],
+    children: [
+      {
+        path: '',
+        pathMatch: 'full',
+        redirectTo: 'banner'
+      },
+      {
+        path: 'banner',
+        component: BannerComponent,
+      },
+      {
+        path: 'product-list',
+        component: ProductListComponent,
+      }
+    ]
   }
   // {
   //   path: 'portfolio',

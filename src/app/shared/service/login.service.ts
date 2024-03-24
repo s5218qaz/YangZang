@@ -1,22 +1,27 @@
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LoginService {
-  private loginStatusData = false;
+  private loginStatus = false;
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   login(): void {
-    this.loginStatusData = true;
+    this.loginStatus = true;
+    this.router.navigate(['/cms']);
   }
 
   logout(): void {
-    this.loginStatusData = false;
+    this.loginStatus = false;
+    this.router.navigate(['']);
   }
 
-  get loginStatus(): boolean {
-    return this.loginStatusData;
+  get loginStatusDto(): boolean {
+    return this.loginStatus;
   }
 }

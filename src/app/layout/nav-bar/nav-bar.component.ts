@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import {LoginService} from '../../shared/service/login.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -11,21 +12,20 @@ export class NavBarComponent implements OnInit {
 
   constructor(
     private router: Router,
+    private loginService: LoginService
   ) { }
 
   ngOnInit(): void {
   }
 
-  isLoginPage(): boolean {
-    return this.router.url.includes('login')
+  hasUrlInclude(url: string): boolean {
+    return this.router.url.includes(url)
       ? true
       : false;
   }
 
-  isCMS(): boolean {
-    return this.router.url.includes('cms')
-            ? true
-            : false;
+  logout(): void {
+    this.loginService.logout();
   }
 
   clickHam(): void{
